@@ -6,3 +6,10 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  */
+li {
+  display: inline;
+}
+
+article:first-child {
+  color: rgba(0, 0, 0, 0.5);
+}
