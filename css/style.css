@@ -11,6 +11,19 @@ body {
   background: radial-gradient(darkgreen, rgb(4, 41, 6));
   color: aliceblue;
   font-size: 20px;
+  font-family: "Viaoda Libre", cursive;
+  font-weight: bold;
+}
+header {
+  background: radial-gradient(rgb(165, 180, 165), rgb(58, 216, 66));
+  padding: 5%;
+}
+main {
+  background-image: linear-gradient(
+    125deg,
+    rgb(0, 128, 128),
+    rgb(216, 146, 16)
+  );
 }
 a {
   color: antiquewhite;
