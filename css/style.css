@@ -6,10 +6,53 @@
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
  */
-li {
-  display: inline;
+
+body {
+  background: radial-gradient(darkgreen, rgb(4, 41, 6));
+  color: aliceblue;
+  font-size: 20px;
+}
+a {
+  color: antiquewhite;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
 }
 
+li {
+  display: inline;
+  margin: auto;
+}
+
+.projectsection {
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+article {
+  color: aliceblue;
+  display: inline-block;
+  margin-right: -4px;
+  width: 30%;
+}
 article:first-child {
-  color: rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(
+    65deg,
+    rgba(250, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+}
+article:nth-child(2) {
+  background-image: linear-gradient(65deg, green, rgb(216, 16, 216));
+}
+article:nth-child(3) {
+  background-image: linear-gradient(65deg, rgb(60, 0, 128), rgb(243, 141, 8));
+}
+footer {
+  font-size: 0.7em;
+}
+img {
+  display: block;
+  margin: auto;
 }
