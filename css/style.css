@@ -35,6 +35,9 @@ nav a {
   border-style: double;
   border-radius: 30px;
 }
+nav a:hover {
+  filter: invert(50%);
+}
 
 header {
   background: radial-gradient(rgb(165, 180, 165), rgb(58, 216, 66));
@@ -99,9 +102,7 @@ li {
 #projectsection {
   display: flex;
   position: relative;
-  margin-left: 20%;
-  margin-right: 5%;
-  width: 90%;
+  margin-left: 30%;
 }
 
 article {
@@ -149,6 +150,7 @@ article > a {
   display: contents;
   bottom: 100px;
 }
+
 footer {
   font-size: 0.7em;
   width: 100%;
@@ -173,4 +175,10 @@ footer {
 }
 #profileimg:hover {
   filter: invert(70%);
+}
+
+footer a:hover {
+  border: 2px;
+  border-color: blanchedalmond;
+  border-style: inset;
 }
