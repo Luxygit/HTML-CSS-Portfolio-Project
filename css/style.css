@@ -70,6 +70,7 @@ a {
 h2 {
   font-size: 1.5em;
   margin-left: 15px;
+  padding-top: 25px;
 }
 
 h3 {
@@ -85,6 +86,9 @@ h3 {
   bottom: 50px;
   position: relative;
   display: inline-block;
+  border: 5px rgb(255, 255, 255) inset;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 li {
@@ -95,7 +99,7 @@ li {
 #projectsection {
   display: flex;
   position: relative;
-  margin-left: 10%;
+  margin-left: 20%;
   margin-right: 5%;
   width: 90%;
 }
@@ -104,25 +108,37 @@ article {
   color: aliceblue;
   display: inline-block;
   margin-right: -5px;
-  width: 25%;
+  width: 15%;
   padding: 2%;
-  border: 5px;
-  border-style: solid;
+  border: 8px;
+  border-style: inset;
   border-radius: 30px;
   margin-bottom: 80px;
+  transition: 1.4s ease;
+  margin-left: 4px;
 }
+
 article:first-child {
   background-image: linear-gradient(
     65deg,
-    rgba(250, 0, 0, 0.3),
-    rgba(0, 0, 0, 0.3)
+    rgba(82, 10, 10, 0.3),
+    rgba(20, 3, 3, 0.1)
   );
 }
 article:nth-child(2) {
-  background-image: linear-gradient(65deg, green, rgb(216, 16, 216));
+  background-image: linear-gradient(65deg, green, rgb(88, 8, 88));
 }
 article:nth-child(3) {
-  background-image: linear-gradient(65deg, rgb(60, 0, 128), rgb(243, 141, 8));
+  background-image: linear-gradient(65deg, rgb(60, 0, 128), rgb(109, 66, 9));
+}
+
+article:hover {
+  width: 20%;
+  background-image: linear-gradient(
+    65deg,
+    rgba(48, 161, 82, 0.3),
+    rgba(185, 52, 29, 0.3)
+  );
 }
 article > p {
   font-weight: bold;
@@ -139,8 +155,8 @@ footer {
 }
 #profileimg {
   display: flex;
-  border: 4px;
-  border-style: solid;
+  border: 8px;
+  border-style: inset;
   border-radius: 30px;
   float: right;
   clear: both;
@@ -148,10 +164,13 @@ footer {
   padding: 10px;
   margin-left: 40px;
   margin-right: 25%;
-  margin-top: -30px;
   margin-bottom: 40px;
   width: 250px;
   height: 250px;
   object-fit: cover;
   object-position: 100% 30%;
+  transition: 0.3s linear;
+}
+#profileimg:hover {
+  filter: invert(70%);
 }
