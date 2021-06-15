@@ -56,8 +56,8 @@ main {
 }
 
 #about {
-  margin-bottom: 200px;
   width: 100%;
+  display: flex;
 }
 
 a {
@@ -81,6 +81,10 @@ h3 {
   margin-left: 20%;
   margin-top: 5%;
   font-size: 1.62em;
+  width: 30%;
+  bottom: 50px;
+  position: relative;
+  display: inline-block;
 }
 
 li {
@@ -122,9 +126,11 @@ article:nth-child(3) {
 }
 article > p {
   font-weight: bold;
+  text-align: justify;
 }
 article > a {
   position: absolute;
+  display: contents;
   bottom: 100px;
 }
 footer {
@@ -132,16 +138,18 @@ footer {
   width: 100%;
 }
 #profileimg {
-  display: block;
+  display: flex;
   border: 4px;
   border-style: solid;
   border-radius: 30px;
   float: right;
+  clear: both;
   position: relative;
   padding: 10px;
   margin-left: 40px;
   margin-right: 25%;
   margin-top: -30px;
+  margin-bottom: 40px;
   width: 250px;
   height: 250px;
   object-fit: cover;
